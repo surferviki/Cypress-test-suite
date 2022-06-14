@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-14T22:28:42.474Z",
+    "end": "2022-06-14T22:28:46.569Z",
+    "duration": 4095,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7fcb90d6-db8e-4fa8-bbe7-c230903398c0",
+      "title": "",
+      "fullFile": "cypress/e2e/conduit.cy.js",
+      "file": "cypress/e2e/conduit.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "93b8022d-7be9-488f-bca4-da834d221618",
+          "title": "Conduit React App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test the react app",
+              "fullTitle": "Conduit React App Test the react app",
+              "timedOut": null,
+              "duration": 2123,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://react-redux.realworld.io/');\ncy.title().should('include', 'Conduit');\ncy.contains('Sign in').click();\ncy.get('input[type=\"email\"]').type('vikibiki18@gmail.com');\ncy.get('input[type=\"password\"]').type('Wipro@123');\ncy.get('button[type=\"submit\"]').click();",
+              "err": {},
+              "uuid": "ce09fd3a-29b7-41c4-9fe0-0c13a8c1fe5f",
+              "parentUUID": "93b8022d-7be9-488f-bca4-da834d221618",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce09fd3a-29b7-41c4-9fe0-0c13a8c1fe5f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2123,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cypresstestsuite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "firstspec": "npx cypress run --reporter mochawesome --headed -b chrome -- spec ./cypress/e2e/spec.cy.js",
+    "answer": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/answer.cy.js",
+    "conduit": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/conduit.cy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.1.0",
+    "cypress-xpath": "^1.6.2"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
