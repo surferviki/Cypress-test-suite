@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
+    "open": "npx cypress open",
+    "verify": "npx cypress verify",
     "firstspec": "npx cypress run --reporter mochawesome --headed -b chrome -- spec ./cypress/e2e/spec.cy.js",
     "answer": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/answer.cy.js",
     "conduit": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/conduit.cy.js",
