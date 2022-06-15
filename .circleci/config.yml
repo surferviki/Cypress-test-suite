@@ -16,7 +16,7 @@ jobs:
            - npm run conduit
            - npm run apitest
       - store_test_results:
-          path: /test-results
+          path: mochawesome-report
 workflows:
   e2e-test:
     jobs:
