@@ -6,6 +6,7 @@
   "scripts": {
     "open": "npx cypress open",
     "verify": "npx cypress verify",
+    "runall": "npx cypress run --reporter mochawesome --headed -b chrome -- spec ./cypress/e2e/*.cy.js",
     "firstspec": "npx cypress run --reporter mochawesome --headed -b firefox -- spec ./cypress/e2e/spec.cy.js",
     "answer": "npx cypress run --reporter mochawesome --headed -b firefox --spec ./cypress/e2e/answer.cy.js",
     "conduit": "npx cypress run --reporter mochawesome --headed -b firefox --spec ./cypress/e2e/conduit.cy.js",

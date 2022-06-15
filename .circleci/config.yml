@@ -11,10 +11,7 @@ jobs:
       - browser-tools/install-browser-tools
       - node/install-packages
       - run:
-          commands: 
-           - npm run answer
-           - npm run conduit
-           - npm run apitest
+          command: npm run runall
       - store_test_results:
           path: mochawesome-report
 workflows:
