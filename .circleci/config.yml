@@ -11,7 +11,8 @@ jobs:
       - browser-tools/install-browser-tools
       - node/install-packages
       - run:
-          command: npm run test
+          command: npm run answer
+           npm run conduit
            npm run apitest
       - store_test_results:
           path: /test-results
