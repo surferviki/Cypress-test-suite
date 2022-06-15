@@ -7,7 +7,8 @@
     "cypress:open": "cypress open",
     "firstspec": "npx cypress run --reporter mochawesome --headed -b chrome -- spec ./cypress/e2e/spec.cy.js",
     "answer": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/answer.cy.js",
-    "conduit": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/conduit.cy.js"
+    "conduit": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/conduit.cy.js",
+    "apitest": "npx cypress run --reporter mochawesome --headed -b chrome --spec ./cypress/e2e/sampleapitest.cy.js"
   },
   "keywords": [],
   "author": "",
